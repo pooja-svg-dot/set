@@ -1,0 +1,19 @@
+'''
+1) Write a program to get n number of values in separate line for set and print the values with space separation.
+Sample Input:
+5
+3
+1
+4
+5
+2
+Sample Output:
+1 2 3 4 5 
+'''
+n = int(input("Enter the number of values: "))
+my_set = set()
+for _ in range(n):
+    value = int(input())
+    my_set.add(value)
+print(" ".join(map(str, sorted(my_set))))
+output:1 2 3 4 5
