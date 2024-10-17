@@ -1,0 +1,18 @@
+'''
+Write a program to sort the given list and print it.
+Sample Input:
+30 20 10 50 40
+Sample Output:
+10 20 30 40 50 
+'''
+def main():
+    elements = list(map(int, input("Enter the list elements separated by space: ").split()))
+    sorted_elements = sorted(elements)
+    print(" ".join(map(str, sorted_elements)))
+if __name__ == "__main__":
+    main()
+output:
+Sample Input:
+30 20 10 50 40
+Sample Output:
+10 20 30 40 50 
